@@ -3,8 +3,6 @@
 Nathan Konigkramer
 
 """
-
-
 # Import the pandas
 
 import pandas as pd
