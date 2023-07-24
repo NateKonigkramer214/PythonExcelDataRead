@@ -1,20 +1,11 @@
-"""
-
-Nathan Konigkramer
-
-"""
-# Import the pandas
 
 import pandas as pd
 
-# Column varible 
-col = [1, 1]
-
-# Read the 'TestData.xlsx' file located at 'D:\Python_Excel\TestData.xlsx'
-# and store the data in a pandas DataFrame 
-dataframe = pd.read_excel('D:\Python_Excel\TestData.xlsx', usecols= col) # added the usecols to read from a column defined by var "col"
-
-# Print the contents of the DataFrame 'df'
+def  read_excel(filepath, column):
+    dataframe = pd.read_excel(filepath, usecols = column)
+    return dataframe
+#Vars
+column = [0, 1]
+filepath = 'D:\Python_Excel\TestData2.xlsx' 
+dataframe = read_excel(filepath, column)
 print(dataframe)
-
-
